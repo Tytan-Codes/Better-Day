@@ -5,6 +5,7 @@ from colorama import Fore, Back, Style
 colorama.init(autoreset=True)
 import argparse
 import time
+import traceback
 #args
 parser = argparse.ArgumentParser(description='This is a script that will make your day faster.')
 args = parser.parse_args()
@@ -34,7 +35,9 @@ try:
         if pick == 1:
             search()
         if pick == 0:
+            os.system('cls')
             exit()
+            
 
 
     def search():
@@ -79,13 +82,16 @@ try:
             os.system('py main.py')
         if search == 7:
             sys.exit()
-
+        
     main()
 
 except KeyboardInterrupt:
+    os.system('cls')
     print(f'{Fore.RED + Style.BRIGHT} If you are trying to end the script please type zero when you get the popup.')
-    time.sleep(5)
-    print(f'{Fore.RED + Style.BRIGHT }Sorry for this error. Please report it to https://github.com/tysudo/better_day-0.0.1/issues')
-    os.system('start chrome https://github.com/tysudo/better_day-0.0.1/issues')
     time.sleep(3)
     os.system('py main.py')
+    
+except Exception:
+    os.system('cls')
+    print(f'{Fore.RED + Style.BRIGHT }Sorry for this error. Please report it to https://github.com/tysudo/better_day-0.0.1/issues')
+    os.system('start chrome https://github.com/tysudo/better_day-0.0.1/issues')
