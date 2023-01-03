@@ -12,6 +12,6 @@ py -m pip install -r requirements.txt
 py main.py
 ```
 
-
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/U7U4HIRHW)
 
 - Made by Tysudo
