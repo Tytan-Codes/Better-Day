@@ -112,7 +112,7 @@ try:
 ╚═════╝░░░░╚═╝░░░╚═════╝░░░░╚═╝░░░╚══════╝╚═╝░░░░░╚═╝""")
         print(f'{Fore.RED}(1)Run train')
         print(f'{Fore.RED}(2)HTOP')
-        print(f'{Fore.RED}(3)Search directory')
+        print(f'{Fore.RED}(3)List directory')
         print(f'{Fore.RED}(4)Clone somthing off of Github.')
         print(f'{Fore.RED}(5)Make a File')
         print(f'{Fore.RED}(6)Run system command')
