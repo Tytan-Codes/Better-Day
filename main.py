@@ -49,14 +49,14 @@ try:
     ░╚═══██╗██╔══╝░░██╔══██║██╔══██╗██║░░██╗██╔══██║
     ██████╔╝███████╗██║░░██║██║░░██║╚█████╔╝██║░░██║
     ╚═════╝░╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝""")
-        print(f'{Fore.GREEN}(1)Search Amazon.com')
-        print(f'{Fore.GREEN}(2)Search DuckDuckGo')
-        print(f'{Fore.GREEN}(3)Search YouTube')        
-        print(f'{Fore.GREEN}(4)Search NewEgg')
-        print(f'{Fore.GREEN}(5)Search Google')
-        print(f'{Fore.GREEN}(6)VSCODE Web Builder')
+        print(f'{Fore.RED}(1)Search Amazon.com')
+        print(f'{Fore.RED}(2)Search DuckDuckGo')
+        print(f'{Fore.RED}(3)Search YouTube')        
+        print(f'{Fore.RED}(4)Search NewEgg')
+        print(f'{Fore.RED}(5)Search Google')
+        print(f'{Fore.RED}(6)VSCODE Web Builder')
         print('(7)Quit')
-        search = int(input(f'{Fore.GREEN}What do you want to do: '))
+        search = int(input(f'{Fore.RED}What do you want to do: '))
         if search == 1:
             var1 = str(input('What would you like to search for. Spaces must be +: '))
             os.system('start chrome https://www.amazon.ca/s?k='+var1+'')
@@ -81,6 +81,7 @@ try:
             os.system('start chrome vscode.dev')
             os.system('py main.py')
         if search == 7:
+            os.system('cls')
             sys.exit()
         
     main()
