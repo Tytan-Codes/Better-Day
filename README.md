@@ -14,6 +14,11 @@ py -m pip install -r requirements.txt
 py main.py
 ```
 
+- [x] Added at least 12 working functions
+- [x] Add easer CLI
+- [ ] Makde crossplatform 
+- [ ] Add UI
+
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/U7U4HIRHW)
 
 - Made by Tysudo
