@@ -13,7 +13,7 @@ args = parser.parse_args()
 try:
     def main():
         os.system('cls')
-        print("""
+        print(f"""{Fore.WHITE}
     ██████╗░███████╗████████╗████████╗███████╗██████╗░  ██████╗░░█████╗░██╗░░░██╗
     ██╔══██╗██╔════╝╚══██╔══╝╚══██╔══╝██╔════╝██╔══██╗  ██╔══██╗██╔══██╗╚██╗░██╔╝
     ██████╦╝█████╗░░░░░██║░░░░░░██║░░░█████╗░░██████╔╝  ██║░░██║███████║░╚████╔╝░
@@ -28,12 +28,15 @@ try:
     ╚█████╔╝██╗╚█████╔╝██╗███████╗
     ░╚════╝░╚═╝░╚════╝░╚═╝╚══════╝""")
         print(f'{Fore.RED}(1) Search')
+        print(f'{Fore.RED}(2) System')
         print('(0) Exit')
         
         pick = (int(input(f'{Fore.GREEN}What would you like to do? ')))
         
         if pick == 1:
             search()
+        if pick == 2:
+            system()
         if pick == 0:
             os.system('cls')
             exit()
@@ -87,6 +90,59 @@ try:
         if search == 0:
             os.system('cls')
             sys.exit()
+        else: 
+            os.system('cls')
+            print(f'{Fore.RED + Style.BRIGHT}Please choose a valid input.')
+            time.sleep(3)
+            os.system('py main.py')
+
+
+
+
+
+
+    def system():
+        os.system('cls')
+        print(f"""{Fore.WHITE}
+░██████╗██╗░░░██╗░██████╗████████╗███████╗███╗░░░███╗
+██╔════╝╚██╗░██╔╝██╔════╝╚══██╔══╝██╔════╝████╗░████║
+╚█████╗░░╚████╔╝░╚█████╗░░░░██║░░░█████╗░░██╔████╔██║
+░╚═══██╗░░╚██╔╝░░░╚═══██╗░░░██║░░░██╔══╝░░██║╚██╔╝██║
+██████╔╝░░░██║░░░██████╔╝░░░██║░░░███████╗██║░╚═╝░██║
+╚═════╝░░░░╚═╝░░░╚═════╝░░░░╚═╝░░░╚══════╝╚═╝░░░░░╚═╝""")
+        print(f'{Fore.RED}(1)Run train')
+        print(f'{Fore.RED}(2)HTOP')
+        print(f'{Fore.RED}(3)Search directory')
+        print(f'{Fore.RED}(4)Clone somthing off of Github.')
+        print(f'{Fore.RED}(5)Make a File')
+        print(f'{Fore.RED}(7)Check the weather')
+        print(f'{Fore.RED}(8)Run system command')
+        print(f'{Fore.RED}(0)Exit')
+        System = int(input(f'{Fore.GREEN}What would you like to do: '))
+        if System == 1:
+            os.system('sl')
+            os.system('python main.py')
+        if System == 2:
+            os.system('htop')
+            os.system('python main.py')
+        if System == 3:
+            var7 = str(input(f'{Fore.RED}What directory would you like to search: '))
+            os.system('ls '+var7+'')
+            os.system('python main.py')
+        if System == 4:
+            var8 = str(input(f'{Fore.RED}What would you like to clone: '))
+            os.system('git clone '+var8+'')
+            os.system('python main.py')
+        if System == 5:
+            var9 = str(input(f'{Fore.RED}What file would you like to make. EX python.py: '))
+            os.system('type nul > '+var9+'')
+            os.system('python main.py')
+        if System == 8:
+            var10 = str(input(f'{Fore.RED}What command would you like to run: '))
+            os.system(''+var10+'')
+            os.system('python main.py')
+        if System == 0:
+            exit()
         else: 
             os.system('cls')
             print(f'{Fore.RED + Style.BRIGHT}Please choose a valid input.')
