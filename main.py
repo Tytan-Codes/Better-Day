@@ -63,26 +63,26 @@ try:
         search = int(input(f'{Fore.GREEN}What do you want to do: '))
         if search == 1:
             var1 = str(input('What would you like to search for. Spaces must be +: '))
-            os.system('start chrome https://www.amazon.ca/s?k='+var1+'')
+            os.system('start firefox https://www.amazon.ca/s?k='+var1+'')
             os.system('py main.py')
         if search == 2:
             var2 = str(input('What would you like to search for. Spaces must be +: '))
-            os.system('start chrome https://duckduckgo.com/?q='+var2+' ')
+            os.system('start firefox https://duckduckgo.com/?q='+var2+' ')
             os.system('py main.py')
         if search == 3:
             var3 = str(input('What would you like to search for. Spaces must be +: '))
-            os.system('start chrome https://www.youtube.com/results?search_query='+var3+'')
+            os.system('start firefox https://www.youtube.com/results?search_query='+var3+'')
             os.system('py main.py')
         if search == 4:
             var4 = str(input('What would you like to search for. Spaces must be +: '))
-            os.system('start chrome https://www.newegg.ca/p/pl?d='+var4+'')
+            os.system('start firefox https://www.newegg.ca/p/pl?d='+var4+'')
             os.system('py main.py')
         if search == 5:
             var5 = str(input('What would you like to search for. Spaces must be +: '))
-            os.system('start chrome https://www.google.com/search?q='+var5+'')
+            os.system('start firefox https://www.google.com/search?q='+var5+'')
             os.system('py main.py')
         if search == 6:
-            os.system('start chrome vscode.dev')
+            os.system('start firefox vscode.dev')
             os.system('py main.py')
         if search == 0:
             os.system('cls')
@@ -105,4 +105,5 @@ except KeyboardInterrupt:
 except Exception:
     os.system('cls')
     print(f'{Fore.RED + Style.BRIGHT }Sorry for this error. Please report it to https://github.com/tysudo/better_day-0.0.1/issues')
-    os.system('start chrome https://github.com/tysudo/better_day-0.0.1/issues')
+    time.sleep(3)
+    os.system('start firefox https://github.com/tysudo/better_day-0.0.1/issues')
