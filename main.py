@@ -141,6 +141,7 @@ try:
             os.system(''+var10+'')
             os.system('python main.py')
         if System == 0:
+            os.system(cls)
             exit()
         else: 
             os.system('cls')
