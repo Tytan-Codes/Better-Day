@@ -115,8 +115,7 @@ try:
         print(f'{Fore.RED}(3)Search directory')
         print(f'{Fore.RED}(4)Clone somthing off of Github.')
         print(f'{Fore.RED}(5)Make a File')
-        print(f'{Fore.RED}(7)Check the weather')
-        print(f'{Fore.RED}(8)Run system command')
+        print(f'{Fore.RED}(6)Run system command')
         print(f'{Fore.RED}(0)Exit')
         System = int(input(f'{Fore.GREEN}What would you like to do: '))
         if System == 1:
