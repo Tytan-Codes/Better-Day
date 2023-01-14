@@ -120,26 +120,26 @@ try:
         System = int(input(f'{Fore.GREEN}What would you like to do: '))
         if System == 1:
             os.system('sl')
-            os.system('python main.py')
+            os.system('py main.py')
         if System == 2:
             os.system('htop')
-            os.system('python main.py')
+            os.system('py main.py')
         if System == 3:
             var7 = str(input(f'{Fore.RED}What directory would you like to search: '))
             os.system('ls '+var7+'')
-            os.system('python main.py')
+            os.system('py main.py')
         if System == 4:
             var8 = str(input(f'{Fore.RED}What would you like to clone: '))
             os.system('git clone '+var8+'')
-            os.system('python main.py')
+            os.system('py main.py')
         if System == 5:
-            var9 = str(input(f'{Fore.RED}What file would you like to make. EX python.py: '))
+            var9 = str(input(f'{Fore.RED}What file would you like to make. EX text.txt: '))
             os.system('type nul > '+var9+'')
-            os.system('python main.py')
+            os.system('py main.py')
         if System == 8:
             var10 = str(input(f'{Fore.RED}What command would you like to run: '))
             os.system(''+var10+'')
-            os.system('python main.py')
+            os.system('py main.py')
         if System == 0:
             os.system(cls)
             exit()
