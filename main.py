@@ -1,17 +1,33 @@
 import os
 import sys
+import sys
 import colorama
 from colorama import Fore, Back, Style
 colorama.init(autoreset=True)
 import argparse
 import time
 import traceback
+from tqdm import tqdm
+
+
+
+   
+    
+    
+    
 #args
 parser = argparse.ArgumentParser(description='This is a script that will make your day faster.')
 args = parser.parse_args()
 
 try:
     def main():
+        os.system('cls')
+        print(f'{Fore.RED + Style.BRIGHT}Checking Directories...')
+        for i in tqdm([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]):
+            time.sleep(0.1)
+        print(f'{Fore.RED + Style.BRIGHT}Checking Dependencies...')
+        for i in tqdm([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]):
+            time.sleep(0.1)
         os.system('cls')
         print(f"""{Fore.WHITE}
     ██████╗░███████╗████████╗████████╗███████╗██████╗░  ██████╗░░█████╗░██╗░░░██╗
@@ -116,8 +132,8 @@ try:
         print(f'{Fore.RED}(4)Clone somthing off of Github.')
         print(f'{Fore.RED}(5)Make a File')
         print(f'{Fore.RED}(6)Run system command')
-        print(f'{Fore.WHITE}(0)Exit')
-        System = int(input(f'{Fore.GREEN}What would you like to do: '))
+        print(f'{Fore.WHITE}(0)Quit')
+        System = (int(input(f'{Fore.GREEN}What would you like to do: ')))
         if System == 1:
             os.system('sl')
             os.system('py main.py')
@@ -125,23 +141,24 @@ try:
             os.system('htop')
             os.system('py main.py')
         if System == 3:
-            var7 = str(input(f'{Fore.RED}What directory would you like to search: '))
+            var7 = str(input(f'{Fore.GREEN}What directory would you like to search: '))
             os.system('ls '+var7+'')
             os.system('py main.py')
         if System == 4:
-            var8 = str(input(f'{Fore.RED}What would you like to clone: '))
+            var8 = str(input(f'{Fore.GREEN}What would you like to clone: '))
             os.system('git clone '+var8+'')
             os.system('py main.py')
         if System == 5:
-            var9 = str(input(f'{Fore.RED}What file would you like to make. EX text.txt: '))
+            var9 = str(input(f'{Fore.GREEN}What file would you like to make. EX text.txt: '))
             os.system('type nul > '+var9+'')
             os.system('py main.py')
-        if System == 8:
-            var10 = str(input(f'{Fore.RED}What command would you like to run: '))
+        if System == 6:
+            os.system('cls')
+            var10 = str(input(f'{Fore.GREEN}What command would you like to run: '))
             os.system(''+var10+'')
             os.system('py main.py')
         if System == 0:
-            os.system(cls)
+            os.system('cls')
             exit()
         else: 
             os.system('cls')
@@ -149,8 +166,18 @@ try:
             time.sleep(3)
             os.system('py main.py')
 
-        
-    main()
+    
+
+
+
+    
+    
+    
+
+    
+    
+    
+           
 
 except KeyboardInterrupt:
     os.system('cls')
@@ -163,3 +190,8 @@ except Exception:
     print(f'{Fore.RED + Style.BRIGHT }Sorry for this error. Please report it to https://github.com/tysudo/better_day-0.0.1/issues')
     time.sleep(3)
     os.system('start firefox https://github.com/tysudo/better_day-0.0.1/issues')
+
+
+
+
+main()
