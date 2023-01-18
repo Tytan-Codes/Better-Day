@@ -1,6 +1,6 @@
 # How to install.
 
-## I have added chatGPT to the script!!! If you would like to use it run: wsl nano +180 main.py
+## I have added chatGPT to the script!!! If you would like to use it run: wsl nano +179 main.py
 
 This script is sadly for windows only. Working on getting it cross platform.
 
