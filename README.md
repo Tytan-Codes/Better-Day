@@ -1,5 +1,7 @@
 # How to install.
 
+## I have not added chatGPT to the script!!! If you would like to use it run: nano +180 main.py
+
 This script is sadly for windows only. Working on getting it cross platform.
 
 Please download and run __[install.bat](http://github.com/tysudo/better_day-0.0.1/releases/download/install/install.bat)__ to install requirments and the script its self.
