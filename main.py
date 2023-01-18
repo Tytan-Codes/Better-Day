@@ -2,6 +2,7 @@ import os
 import sys
 import sys
 import colorama
+import openai
 from colorama import Fore, Back, Style
 colorama.init(autoreset=True)
 import argparse
@@ -45,6 +46,7 @@ try:
     ░╚════╝░╚═╝░╚════╝░╚═╝╚══════╝""")
         print(f'{Fore.RED}(1) Search')
         print(f'{Fore.RED}(2) System')
+        print(f'{Fore.RED}(3) ChatGPT')
         print('(0) Exit')
         
         pick = (int(input(f'{Fore.GREEN}What would you like to do? ')))
@@ -53,9 +55,12 @@ try:
             search()
         if pick == 2:
             system()
+        if pick == 3:
+            chatGPT()
         if pick == 0:
             os.system('cls')
             exit()
+        
         else: 
             os.system('cls')
             print(f'{Fore.RED + Style.BRIGHT}Please choose a valid input.')
@@ -72,13 +77,13 @@ try:
     ░╚═══██╗██╔══╝░░██╔══██║██╔══██╗██║░░██╗██╔══██║
     ██████╔╝███████╗██║░░██║██║░░██║╚█████╔╝██║░░██║
     ╚═════╝░╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝""")
-        print(f'{Fore.RED}(1)Search Amazon.com')
-        print(f'{Fore.RED}(2)Search DuckDuckGo')
-        print(f'{Fore.RED}(3)Search YouTube')        
-        print(f'{Fore.RED}(4)Search NewEgg')
-        print(f'{Fore.RED}(5)Search Google')
-        print(f'{Fore.RED}(6)VSCODE Web Builder')
-        print('(0)Quit')
+        print(f'{Fore.RED}(1) Search Amazon.com')
+        print(f'{Fore.RED}(2) Search DuckDuckGo')
+        print(f'{Fore.RED}(3) Search YouTube')        
+        print(f'{Fore.RED}(4) Search NewEgg')
+        print(f'{Fore.RED}(5) Search Google')
+        print(f'{Fore.RED}(6) VSCODE Web Builder')
+        print('(0) Quit')
         search = int(input(f'{Fore.GREEN}What do you want to do: '))
         if search == 1:
             var1 = str(input('What would you like to search for. Spaces must be +: '))
@@ -126,13 +131,13 @@ try:
 ░╚═══██╗░░╚██╔╝░░░╚═══██╗░░░██║░░░██╔══╝░░██║╚██╔╝██║
 ██████╔╝░░░██║░░░██████╔╝░░░██║░░░███████╗██║░╚═╝░██║
 ╚═════╝░░░░╚═╝░░░╚═════╝░░░░╚═╝░░░╚══════╝╚═╝░░░░░╚═╝""")
-        print(f'{Fore.RED}(1)Run train')
-        print(f'{Fore.RED}(2)HTOP')
-        print(f'{Fore.RED}(3)List directory')
-        print(f'{Fore.RED}(4)Clone somthing off of Github.')
-        print(f'{Fore.RED}(5)Make a File')
-        print(f'{Fore.RED}(6)Run system command')
-        print(f'{Fore.WHITE}(0)Quit')
+        print(f'{Fore.RED}(1) Run train')
+        print(f'{Fore.RED}(2) HTOP')
+        print(f'{Fore.RED}(3) List directory')
+        print(f'{Fore.RED}(4) Clone somthing off of Github.')
+        print(f'{Fore.RED}(5) Make a File')
+        print(f'{Fore.RED}(6) Run system command')
+        print(f'{Fore.WHITE}(0) Quit')
         System = (int(input(f'{Fore.GREEN}What would you like to do: ')))
         if System == 1:
             os.system('sl')
@@ -165,6 +170,28 @@ try:
             print(f'{Fore.RED + Style.BRIGHT}Please choose a valid input.')
             time.sleep(3)
             os.system('py main.py')
+    
+    
+    def chatGPT():
+        os.system('cls')
+        print(f'{Fore.RED + Style.BRIGHT}Go to line 180 of the script and put your openAI API key.')
+        while True:
+            openai.api_key = 'YOUR openAI API KEY HERE'
+            ask = str(input(f'{Fore.WHITE}What would you like to generate? '))
+            response = openai.Completion.create(
+                model="text-davinci-003",
+                prompt=ask,
+                temperature=0.9,
+                max_tokens=2048,
+                top_p=1,
+                frequency_penalty=0,
+                presence_penalty=0.6,
+                stop=[" Human:", " AI:"]
+                )
+
+            text = response['choices'][0]['text']
+            print ('Reply: '+text)
+                
 
     
 
