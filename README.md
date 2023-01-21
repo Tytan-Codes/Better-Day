@@ -18,7 +18,6 @@ git clone http://github.com/Tytan-Codes/Better-Day.git
 cd better_day
 py -m pip install -r requirements.txt
 py main.py
-
 ```
 
 - [x] Added at least 12 working functions
