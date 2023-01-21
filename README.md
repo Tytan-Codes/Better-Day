@@ -2,7 +2,7 @@
 
 ### I have added chatGPT to the script! If you would like to use it run: __wsl nano +179 main.py__ 
 ### You must put your openAI API key where it says "YOUR openAI API KEY HERE"
-### You API key can be found __[here]([http://github.com//Tytan-Codes/Better-Day/releases/download/0.0.1/install.bat](https://beta.openai.com/account/api-keys)__.
+### You API key can be found __[here](https://beta.openai.com/account/api-keys)__.
 ### Must have winget installed for script to work.
 This script is sadly for windows only. Working on getting it cross platform. 
 
