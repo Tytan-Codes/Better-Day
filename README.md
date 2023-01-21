@@ -11,10 +11,14 @@ If you prefer to install manualy ↓↓↓
 
 
 ```
-git clone https://github.com/tysudo/better_day-0.0.1.git
-py -m pip install -r requirements.txt
 winget install sl
+winget install GNU.nano
+wsl --install
+git clone http://github.com/Tytan-Codes/Better-Day.git
+cd better_day
+py -m pip install -r requirements.txt
 py main.py
+
 ```
 
 - [x] Added at least 12 working functions
