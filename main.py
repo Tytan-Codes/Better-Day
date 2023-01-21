@@ -174,7 +174,7 @@ try:
     
     def chatGPT():
         os.system('cls')
-        print(f'{Fore.RED + Style.BRIGHT}Go to line 180 of the script and put your openAI API key.')
+        print(f'{Fore.RED + Style.BRIGHT}Go to line 179 of the script and put your openAI API key.')
         while True:
             openai.api_key = 'YOUR openAI API KEY HERE'
             ask = str(input(f'{Fore.WHITE}What would you like to generate? '))
