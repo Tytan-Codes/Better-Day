@@ -1,6 +1,6 @@
 # How to install.
 
-## I have added chatGPT to the script!!! If you would like to use it run: wsl nano +179 main.py
+### I have added chatGPT to the script! If you would like to use it run: __wsl nano +179 main.py__ You must put your openAI API key where it says "YOUR openAI API KEY HERE"
 ### Must have winget installed for script to work.
 This script is sadly for windows only. Working on getting it cross platform. 
 
