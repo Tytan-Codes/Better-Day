@@ -23,6 +23,7 @@ py main.py
 
 - [x] Added at least 12 working functions
 - [x] Add easer CLI
+- [x] Maker CLI look AWESOME
 - [ ] Make crossplatform 
 - [ ] Add UI
 
