@@ -21,6 +21,31 @@ parser = argparse.ArgumentParser(description='This is a script that will make yo
 args = parser.parse_args()
 
 try:
+    def thing():
+            os.system('cls')
+            print(f'{Fore.RED + Style.BRIGHT}(1) Search')
+            print(f'{Fore.RED + Style.BRIGHT}(2) System')
+            print(f'{Fore.RED + Style.BRIGHT}(3) ChatGPT')
+            print('(0) Exit')
+            
+            pick = (int(input(f'{Fore.GREEN}What would you like to do? ')))
+            
+            if pick == 1:
+                search()
+            if pick == 2:
+                system()
+            if pick == 3:
+                chatGPT()
+            if pick == 0:
+                os.system('cls')
+                exit()
+            
+            else: 
+                os.system('cls')
+                print(f'{Fore.RED + Style.BRIGHT}Please choose a valid input.')
+                time.sleep(3)
+                os.system('py main.py')
+
     def main():
         os.system('cls')
         print(f'{Fore.RED + Style.BRIGHT}Checking Directories...')
@@ -31,7 +56,7 @@ try:
             time.sleep(0.05)
         os.system('cls')
         os.system('cls')
-        print("""
+        print(Style.BRIGHT + """
 ██████╗░███████╗████████╗████████╗███████╗██████╗░  ██████╗░░█████╗░██╗░░░██╗
 ██╔══██╗██╔════╝╚══██╔══╝╚══██╔══╝██╔════╝██╔══██╗  ██╔══██╗██╔══██╗╚██╗░██╔╝
 ██████╦╝█████╗░░░░░██║░░░░░░██║░░░█████╗░░██████╔╝  ██║░░██║███████║░╚████╔╝░
@@ -46,39 +71,15 @@ try:
         enter = input(Style.BRIGHT + Fore.YELLOW + '[' + Style.BRIGHT + Fore.RED + '~' + Style.BRIGHT + Fore.YELLOW + '] ' + Style.BRIGHT + Fore.RED + 'Press Enter to Continue...' )
 
         if enter == "":
-            pass
+            thing()
 
         else:
             print(Style.BRIGHT + Fore.RED +"THATS NOT ENTER, THAT\'s ", enter)
-            
-        os.system('cls')
-        print(f'{Fore.RED + Style.BRIGHT}(1) Search')
-        print(f'{Fore.RED}(2) System')
-        print(f'{Fore.RED}(3) ChatGPT')
-        print('(0) Exit')
         
-        pick = (int(input(f'{Fore.GREEN}What would you like to do? ')))
-        
-        if pick == 1:
-            search()
-        if pick == 2:
-            system()
-        if pick == 3:
-            chatGPT()
-        if pick == 0:
-            os.system('cls')
-            exit()
-        
-        else: 
-            os.system('cls')
-            print(f'{Fore.RED + Style.BRIGHT}Please choose a valid input.')
-            time.sleep(3)
-            os.system('py main.py')
-
 
     def search():
         os.system('cls')
-        print(f"""{Fore.WHITE}
+        print(f"""{Fore.WHITE + Style.BRIGHT}
     ░██████╗███████╗░█████╗░██████╗░░█████╗░██╗░░██╗
     ██╔════╝██╔════╝██╔══██╗██╔══██╗██╔══██╗██║░░██║
     ╚█████╗░█████╗░░███████║██████╔╝██║░░╚═╝███████║
@@ -91,7 +92,7 @@ try:
         print(f'{Fore.RED}(4) Search NewEgg')
         print(f'{Fore.RED}(5) Search Google')
         print(f'{Fore.RED}(6) VSCODE Web Builder')
-        print('(0) Quit')
+        print('(0) Back')
         search = int(input(f'{Fore.GREEN}What do you want to do: '))
         if search == 1:
             var1 = str(input('What would you like to search for. Spaces must be +: '))
@@ -117,8 +118,7 @@ try:
             os.system('start firefox vscode.dev')
             os.system('py main.py')
         if search == 0:
-            os.system('cls')
-            sys.exit()
+            thing()
         else: 
             os.system('cls')
             print(f'{Fore.RED + Style.BRIGHT}Please choose a valid input.')
@@ -132,7 +132,7 @@ try:
 
     def system():
         os.system('cls')
-        print(f"""{Fore.WHITE}
+        print(f"""{Fore.WHITE+ Style.BRIGHT}
 ░██████╗██╗░░░██╗░██████╗████████╗███████╗███╗░░░███╗
 ██╔════╝╚██╗░██╔╝██╔════╝╚══██╔══╝██╔════╝████╗░████║
 ╚█████╗░░╚████╔╝░╚█████╗░░░░██║░░░█████╗░░██╔████╔██║
@@ -145,7 +145,7 @@ try:
         print(f'{Fore.RED}(4) Clone somthing off of Github.')
         print(f'{Fore.RED}(5) Make a File')
         print(f'{Fore.RED}(6) Run system command')
-        print(f'{Fore.WHITE}(0) Quit')
+        print(f'{Fore.WHITE}(0) Back')
         System = (int(input(f'{Fore.GREEN}What would you like to do: ')))
         if System == 1:
             os.system('sl')
@@ -171,8 +171,7 @@ try:
             os.system(''+var10+'')
             os.system('py main.py')
         if System == 0:
-            os.system('cls')
-            exit()
+            thing()
         else: 
             os.system('cls')
             print(f'{Fore.RED + Style.BRIGHT}Please choose a valid input.')
