@@ -5,7 +5,7 @@ You must put your openAI API key where it says "YOUR openAI API KEY HERE" <br />
 You API key can be found __[here](https://beta.openai.com/account/api-keys)__. <br />
 This script is sadly for windows only. Working on getting it cross platform.  <br />
 
-Please download and run __[install.bat](http://github.com//Tytan-Codes/Better-Day/releases/download/0.0.1/install.bat)__ to install requirments and the script its self.
+
 
 
 If you prefer to install manualy ↓↓↓
