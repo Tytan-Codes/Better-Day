@@ -1,5 +1,5 @@
 # How to install.
-#### MUST HAVE WINGET INSTALLED FOR INSTALL.BAT TO WORK
+#### MUST HAVE WINGET INSTALLED FOR install.py TO WORK
 I have added chatGPT to the script! If you would like to use it run: __wsl nano +179 main.py__ <br />
 You must put your openAI API key where it says "YOUR openAI API KEY HERE" <br />
 You API key can be found __[here](https://beta.openai.com/account/api-keys)__. <br />
