@@ -8,7 +8,7 @@ This script is sadly for windows only. Working on getting it cross platform.  <b
 
 
 
-If you prefer to install manualy ↓↓↓
+Install ↓↓↓
 
 
 ```
