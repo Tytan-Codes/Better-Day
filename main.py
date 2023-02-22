@@ -52,7 +52,7 @@ try:
             print(Style.BRIGHT + Fore.RED +"THATS NOT ENTER, THAT\'s ", enter)
             
         os.system('cls')
-        print(f'{Fore.RED}(1) Search')
+        print(f'{Fore.RED + Style.BRIGHT}(1) Search')
         print(f'{Fore.RED}(2) System')
         print(f'{Fore.RED}(3) ChatGPT')
         print('(0) Exit')
