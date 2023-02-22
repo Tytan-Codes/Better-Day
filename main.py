@@ -25,25 +25,33 @@ try:
         os.system('cls')
         print(f'{Fore.RED + Style.BRIGHT}Checking Directories...')
         for i in tqdm([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]):
-            time.sleep(0.1)
+            time.sleep(0.05)
         print(f'{Fore.RED + Style.BRIGHT}Checking Dependencies...')
         for i in tqdm([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]):
-            time.sleep(0.1)
+            time.sleep(0.05)
         os.system('cls')
-        print(f"""{Fore.WHITE}
-    ██████╗░███████╗████████╗████████╗███████╗██████╗░  ██████╗░░█████╗░██╗░░░██╗
-    ██╔══██╗██╔════╝╚══██╔══╝╚══██╔══╝██╔════╝██╔══██╗  ██╔══██╗██╔══██╗╚██╗░██╔╝
-    ██████╦╝█████╗░░░░░██║░░░░░░██║░░░█████╗░░██████╔╝  ██║░░██║███████║░╚████╔╝░
-    ██╔══██╗██╔══╝░░░░░██║░░░░░░██║░░░██╔══╝░░██╔══██╗  ██║░░██║██╔══██║░░╚██╔╝░░
-    ██████╦╝███████╗░░░██║░░░░░░██║░░░███████╗██║░░██║  ██████╔╝██║░░██║░░░██║░░░
-    ╚═════╝░╚══════╝░░░╚═╝░░░░░░╚═╝░░░╚══════╝╚═╝░░╚═╝  ╚═════╝░╚═╝░░╚═╝░░░╚═╝░░░
+        os.system('cls')
+        print("""
+██████╗░███████╗████████╗████████╗███████╗██████╗░  ██████╗░░█████╗░██╗░░░██╗
+██╔══██╗██╔════╝╚══██╔══╝╚══██╔══╝██╔════╝██╔══██╗  ██╔══██╗██╔══██╗╚██╗░██╔╝
+██████╦╝█████╗░░░░░██║░░░░░░██║░░░█████╗░░██████╔╝  ██║░░██║███████║░╚████╔╝░
+██╔══██╗██╔══╝░░░░░██║░░░░░░██║░░░██╔══╝░░██╔══██╗  ██║░░██║██╔══██║░░╚██╔╝░░
+██████╦╝███████╗░░░██║░░░░░░██║░░░███████╗██║░░██║  ██████╔╝██║░░██║░░░██║░░░
+╚═════╝░╚══════╝░░░╚═╝░░░░░░╚═╝░░░╚══════╝╚═╝░░╚═╝  ╚═════╝░╚═╝░░╚═╝░░░╚═╝░░░""")
+        print(Style.BRIGHT + 'Author        :   ', Fore.RED + Style.BRIGHT + 'Tytan-Codes')
+        print(Style.BRIGHT + 'Code Type     :   ', Fore.RED + Style.BRIGHT + 'Python 3')
+        print(Style.BRIGHT + 'Description   :   ', Fore.RED + Style.BRIGHT + 'Make something COOL')
+        print(Style.BRIGHT + Fore.YELLOW + '* ' + Style.BRIGHT + 'Trust Me It\'s good' + Style.BRIGHT + Fore.RED + ' -- ' + Style.BRIGHT + 'I\'m a CODER' + Style.BRIGHT + Fore.YELLOW + ' *')
+        print('')
+        enter = input(Style.BRIGHT + Fore.YELLOW + '[' + Style.BRIGHT + Fore.RED + '~' + Style.BRIGHT + Fore.YELLOW + '] ' + Style.BRIGHT + Fore.RED + 'Press Enter to Continue...' )
 
-    ░█████╗░░░░░█████╗░░░░░░███╗░░
-    ██╔══██╗░░░██╔══██╗░░░░████║░░
-    ██║░░██║░░░██║░░██║░░░██╔██║░░
-    ██║░░██║░░░██║░░██║░░░╚═╝██║░░
-    ╚█████╔╝██╗╚█████╔╝██╗███████╗
-    ░╚════╝░╚═╝░╚════╝░╚═╝╚══════╝""")
+        if enter == "":
+            pass
+
+        else:
+            print(Style.BRIGHT + Fore.RED +"THATS NOT ENTER, THAT\'s ", enter)
+            
+        os.system('cls')
         print(f'{Fore.RED}(1) Search')
         print(f'{Fore.RED}(2) System')
         print(f'{Fore.RED}(3) ChatGPT')
