@@ -23,11 +23,11 @@ args = parser.parse_args()
 try:
     def thing():
             os.system('cls')
-            print(Style.BRIGHT + Fore.YELLOW + '[' + Style.BRIGHT + Fore.RED + '#' + Style.BRIGHT + Fore.YELLOW + ']')
-            print(f'{Fore.RED + Style.BRIGHT}(1) Search')
-            print(f'{Fore.RED + Style.BRIGHT}(2) System')
-            print(f'{Fore.RED + Style.BRIGHT}(3) ChatGPT')
-            print('(0) Exit')
+            print(Style.BRIGHT + Fore.YELLOW + '[' + Style.BRIGHT + Fore.RED + '#' + Style.BRIGHT + Fore.YELLOW + '] Options:')
+            print(f'{Fore.RED + Style.BRIGHT}   (1) Search')
+            print(f'{Fore.RED + Style.BRIGHT}   (2) System')
+            print(f'{Fore.RED + Style.BRIGHT}   (3) ChatGPT')
+            print('   (0) Exit')
             
             pick = (int(input(f'{Fore.GREEN}What would you like to do? ')))
             
