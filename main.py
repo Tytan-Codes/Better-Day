@@ -23,6 +23,7 @@ args = parser.parse_args()
 try:
     def thing():
             os.system('cls')
+            print(Style.BRIGHT + Fore.YELLOW + '[' + Style.BRIGHT + Fore.RED + '#' + Style.BRIGHT + Fore.YELLOW + ']')
             print(f'{Fore.RED + Style.BRIGHT}(1) Search')
             print(f'{Fore.RED + Style.BRIGHT}(2) System')
             print(f'{Fore.RED + Style.BRIGHT}(3) ChatGPT')
@@ -66,6 +67,9 @@ try:
         print(Style.BRIGHT + 'Author        :   ', Fore.RED + Style.BRIGHT + 'Tytan-Codes')
         print(Style.BRIGHT + 'Code Type     :   ', Fore.RED + Style.BRIGHT + 'Python 3')
         print(Style.BRIGHT + 'Description   :   ', Fore.RED + Style.BRIGHT + 'Make something COOL')
+        print(Style.BRIGHT + 'Github        : ', Fore.RED + Style.BRIGHT +'  github.com/Tytan-Codes')
+        print(Style.BRIGHT + 'Version       : ', Fore.RED + Style.BRIGHT + '  1.1 -- Better Day Project')
+        print(Style.BRIGHT + '(c) 2022-2033, Tytan-Codes All rights reserved')
         print(Style.BRIGHT + Fore.YELLOW + '* ' + Style.BRIGHT + 'Trust Me It\'s good' + Style.BRIGHT + Fore.RED + ' -- ' + Style.BRIGHT + 'I\'m a CODER' + Style.BRIGHT + Fore.YELLOW + ' *')
         print('')
         enter = input(Style.BRIGHT + Fore.YELLOW + '[' + Style.BRIGHT + Fore.RED + '~' + Style.BRIGHT + Fore.YELLOW + '] ' + Style.BRIGHT + Fore.RED + 'Press Enter to Continue...' )
