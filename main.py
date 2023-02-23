@@ -24,12 +24,12 @@ try:
     def thing():
             os.system('cls')
             print(Style.BRIGHT + Fore.YELLOW + '[' + Style.BRIGHT + Fore.RED + '#' + Style.BRIGHT + Fore.YELLOW + '] Options:')
-            print(f'{Fore.RED + Style.BRIGHT}   (1) Search')
-            print(f'{Fore.RED + Style.BRIGHT}   (2) System')
-            print(f'{Fore.RED + Style.BRIGHT}   (3) ChatGPT')
-            print('   (0) Exit')
+            print(Style.BRIGHT + Fore.RED + '   {' + Style.BRIGHT + Fore.WHITE +'1' + Style.BRIGHT + Fore.RED + '}' + Style.BRIGHT + Fore.YELLOW + ' ~> ' +  Style.BRIGHT + Fore.WHITE +' Search')
+            print(Style.BRIGHT + Fore.RED + '   {' + Style.BRIGHT + Fore.WHITE +'2' + Style.BRIGHT + Fore.RED + '}' + Style.BRIGHT + Fore.YELLOW + ' ~> ' +  Style.BRIGHT + Fore.WHITE +' System')
+            print(Style.BRIGHT + Fore.RED + '   {' + Style.BRIGHT + Fore.WHITE +'3' + Style.BRIGHT + Fore.RED + '}' + Style.BRIGHT + Fore.YELLOW + ' ~> ' +  Style.BRIGHT + Fore.WHITE + ' chatGPT')
+            print(Style.BRIGHT + Fore.RED + '   {' + Style.BRIGHT + Fore.WHITE +'0' + Style.BRIGHT + Fore.RED + '}' + Style.BRIGHT + Fore.YELLOW + ' ~> ' +  Style.BRIGHT + Fore.WHITE +' Exit')
             
-            pick = (int(input(f'{Fore.GREEN}What would you like to do? ')))
+            pick = (int(input(Style.BRIGHT + Fore.RED + 'Better Day ' + Style.BRIGHT + Fore.YELLOW + '> ' + Style.BRIGHT + Fore.RED + 'Choose ')))
             
             if pick == 1:
                 search()
@@ -48,13 +48,7 @@ try:
                 os.system('py main.py')
 
     def main():
-        os.system('cls')
-        print(f'{Fore.RED + Style.BRIGHT}Checking Directories...')
-        for i in tqdm([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]):
-            time.sleep(0.05)
-        print(f'{Fore.RED + Style.BRIGHT}Checking Dependencies...')
-        for i in tqdm([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]):
-            time.sleep(0.05)
+        
         os.system('cls')
         os.system('cls')
         print(Style.BRIGHT + """
