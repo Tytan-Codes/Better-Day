@@ -1,5 +1,4 @@
 import os
-import sys
 import colorama
 import openai
 from colorama import Fore, Back, Style
