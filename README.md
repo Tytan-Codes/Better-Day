@@ -27,6 +27,6 @@ py main.py
 - [ ] Make crossplatform 
 - [ ] Add UI
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/U7U4HIRHW)
+
 
 - Made by Tytan
