@@ -1,0 +1,3 @@
+[pyupdater.plugins.upload]
+s3 = s3_uploader:S3Uploader
+

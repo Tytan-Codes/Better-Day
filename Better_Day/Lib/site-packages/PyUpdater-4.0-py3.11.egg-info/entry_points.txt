@@ -1,0 +1,2 @@
+[console_scripts]
+pyupdater = pyupdater.cli:main
