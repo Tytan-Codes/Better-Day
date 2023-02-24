@@ -1,14 +1,12 @@
 import os
 import sys
-import sys
 import colorama
 import openai
 from colorama import Fore, Back, Style
 colorama.init(autoreset=True)
 import argparse
 import time
-import traceback
-from tqdm import tqdm
+
 
 
 
@@ -84,14 +82,15 @@ try:
     ░╚═══██╗██╔══╝░░██╔══██║██╔══██╗██║░░██╗██╔══██║
     ██████╔╝███████╗██║░░██║██║░░██║╚█████╔╝██║░░██║
     ╚═════╝░╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝""")
-        print(f'{Fore.RED}(1) Search Amazon.com')
-        print(f'{Fore.RED}(2) Search DuckDuckGo')
-        print(f'{Fore.RED}(3) Search YouTube')        
-        print(f'{Fore.RED}(4) Search NewEgg')
-        print(f'{Fore.RED}(5) Search Google')
-        print(f'{Fore.RED}(6) VSCODE Web Builder')
-        print('(0) Back')
-        search = int(input(f'{Fore.GREEN}What do you want to do: '))
+        print(Style.BRIGHT + Fore.YELLOW + '[' + Style.BRIGHT + Fore.RED + '#' + Style.BRIGHT + Fore.YELLOW + '] Options:')
+        print(Style.BRIGHT + Fore.RED + '   {' + Style.BRIGHT + Fore.WHITE +'1' + Style.BRIGHT + Fore.RED + '}' + Style.BRIGHT + Fore.YELLOW + ' ~> ' +  Style.BRIGHT + Fore.WHITE +' Search Amazom.com')
+        print(Style.BRIGHT + Fore.RED + '   {' + Style.BRIGHT + Fore.WHITE +'2' + Style.BRIGHT + Fore.RED + '}' + Style.BRIGHT + Fore.YELLOW + ' ~> ' +  Style.BRIGHT + Fore.WHITE +' Search DuckDuckGo')
+        print(Style.BRIGHT + Fore.RED + '   {' + Style.BRIGHT + Fore.WHITE +'3' + Style.BRIGHT + Fore.RED + '}' + Style.BRIGHT + Fore.YELLOW + ' ~> ' +  Style.BRIGHT + Fore.WHITE +' Search Youtube')
+        print(Style.BRIGHT + Fore.RED + '   {' + Style.BRIGHT + Fore.WHITE +'4' + Style.BRIGHT + Fore.RED + '}' + Style.BRIGHT + Fore.YELLOW + ' ~> ' +  Style.BRIGHT + Fore.WHITE +' Search NewEgg')        
+        print(Style.BRIGHT + Fore.RED + '   {' + Style.BRIGHT + Fore.WHITE +'5' + Style.BRIGHT + Fore.RED + '}' + Style.BRIGHT + Fore.YELLOW + ' ~> ' +  Style.BRIGHT + Fore.WHITE +' Search Google')
+        print(Style.BRIGHT + Fore.RED + '   {' + Style.BRIGHT + Fore.WHITE +'6' + Style.BRIGHT + Fore.RED + '}' + Style.BRIGHT + Fore.YELLOW + ' ~> ' +  Style.BRIGHT + Fore.WHITE +' Open VSCODE Web Builder')
+        print(Style.BRIGHT + Fore.RED + '   {' + Style.BRIGHT + Fore.WHITE +'0' + Style.BRIGHT + Fore.RED + '}' + Style.BRIGHT + Fore.YELLOW + ' ~> ' +  Style.BRIGHT + Fore.WHITE +' Back')
+        search = (int(input(Style.BRIGHT + Fore.RED + 'Better Day ' + Style.BRIGHT + Fore.YELLOW + '> ' + Style.BRIGHT + Fore.RED + 'Choose ')))
         if search == 1:
             var1 = str(input('What would you like to search for. Spaces must be +: '))
             os.system('start firefox https://www.amazon.ca/s?k='+var1+'')
@@ -137,14 +136,15 @@ try:
 ░╚═══██╗░░╚██╔╝░░░╚═══██╗░░░██║░░░██╔══╝░░██║╚██╔╝██║
 ██████╔╝░░░██║░░░██████╔╝░░░██║░░░███████╗██║░╚═╝░██║
 ╚═════╝░░░░╚═╝░░░╚═════╝░░░░╚═╝░░░╚══════╝╚═╝░░░░░╚═╝""")
-        print(f'{Fore.RED}(1) Run train')
-        print(f'{Fore.RED}(2) HTOP')
-        print(f'{Fore.RED}(3) List directory')
-        print(f'{Fore.RED}(4) Clone somthing off of Github.')
-        print(f'{Fore.RED}(5) Make a File')
-        print(f'{Fore.RED}(6) Run system command')
-        print(f'{Fore.WHITE}(0) Back')
-        System = (int(input(f'{Fore.GREEN}What would you like to do: ')))
+        print(Style.BRIGHT + Fore.YELLOW + '[' + Style.BRIGHT + Fore.RED + '#' + Style.BRIGHT + Fore.YELLOW + '] Options:')
+        print(Style.BRIGHT + Fore.RED + '   {' + Style.BRIGHT + Fore.WHITE +'1' + Style.BRIGHT + Fore.RED + '}' + Style.BRIGHT + Fore.YELLOW + ' ~> ' +  Style.BRIGHT + Fore.WHITE +' Run train')
+        print(Style.BRIGHT + Fore.RED + '   {' + Style.BRIGHT + Fore.WHITE +'2' + Style.BRIGHT + Fore.RED + '}' + Style.BRIGHT + Fore.YELLOW + ' ~> ' +  Style.BRIGHT + Fore.WHITE +' HTOP')
+        print(Style.BRIGHT + Fore.RED + '   {' + Style.BRIGHT + Fore.WHITE +'3' + Style.BRIGHT + Fore.RED + '}' + Style.BRIGHT + Fore.YELLOW + ' ~> ' +  Style.BRIGHT + Fore.WHITE +' List directory')
+        print(Style.BRIGHT + Fore.RED + '   {' + Style.BRIGHT + Fore.WHITE +'4' + Style.BRIGHT + Fore.RED + '}' + Style.BRIGHT + Fore.YELLOW + ' ~> ' +  Style.BRIGHT + Fore.WHITE +' Clone something off of github')
+        print(Style.BRIGHT + Fore.RED + '   {' + Style.BRIGHT + Fore.WHITE +'5' + Style.BRIGHT + Fore.RED + '}' + Style.BRIGHT + Fore.YELLOW + ' ~> ' +  Style.BRIGHT + Fore.WHITE +' Make a file')
+        print(Style.BRIGHT + Fore.RED + '   {' + Style.BRIGHT + Fore.WHITE +'6' + Style.BRIGHT + Fore.RED + '}' + Style.BRIGHT + Fore.YELLOW + ' ~> ' +  Style.BRIGHT + Fore.WHITE +' Run a system command')
+        print(Style.BRIGHT + Fore.RED + '   {' + Style.BRIGHT + Fore.WHITE +'0' + Style.BRIGHT + Fore.RED + '}' + Style.BRIGHT + Fore.YELLOW + ' ~> ' +  Style.BRIGHT + Fore.WHITE +' Back')
+        System = (int(input(Style.BRIGHT + Fore.RED + 'Better Day ' + Style.BRIGHT + Fore.YELLOW + '> ' + Style.BRIGHT + Fore.RED + 'Choose ')))
         if System == 1:
             os.system('sl')
             os.system('py main.py')
@@ -152,20 +152,20 @@ try:
             os.system('htop')
             os.system('py main.py')
         if System == 3:
-            var7 = str(input(f'{Fore.GREEN}What directory would you like to search: '))
+            var7 = (int(input(Style.BRIGHT + Fore.RED + 'Better Day ' + Style.BRIGHT + Fore.YELLOW + '> ' + Style.BRIGHT + Fore.RED + 'What directory would you like to search? ')))
             os.system('ls '+var7+'')
             os.system('py main.py')
         if System == 4:
-            var8 = str(input(f'{Fore.GREEN}What would you like to clone: '))
+            var8 = (int(input(Style.BRIGHT + Fore.RED + 'Better Day ' + Style.BRIGHT + Fore.YELLOW + '> ' + Style.BRIGHT + Fore.RED + 'What would you like to clone? ')))
             os.system('git clone '+var8+'')
             os.system('py main.py')
         if System == 5:
-            var9 = str(input(f'{Fore.GREEN}What file would you like to make. EX text.txt: '))
+            var9 = (int(input(Style.BRIGHT + Fore.RED + 'Better Day ' + Style.BRIGHT + Fore.YELLOW + '> ' + Style.BRIGHT + Fore.RED + 'WHat file would you like to make? ')))
             os.system('type nul > '+var9+'')
             os.system('py main.py')
         if System == 6:
             os.system('cls')
-            var10 = str(input(f'{Fore.GREEN}What command would you like to run: '))
+            var10 = (int(input(Style.BRIGHT + Fore.RED + 'Better Day ' + Style.BRIGHT + Fore.YELLOW + '> ' + Style.BRIGHT + Fore.RED + 'What command would you like to run? ')))
             os.system(''+var10+'')
             os.system('py main.py')
         if System == 0:
@@ -182,7 +182,7 @@ try:
         print(f'{Fore.RED + Style.BRIGHT}Go to line 179 of the script and put your openAI API key.')
         while True:
             openai.api_key = 'YOUR openAI API KEY HERE'
-            ask = str(input(f'{Fore.WHITE}What would you like to generate? '))
+            ask = (str(input(Style.BRIGHT + Fore.RED + 'Better Day ' + Style.BRIGHT + Fore.YELLOW + '> ' + Style.BRIGHT + Fore.RED + 'What would you like to generate? ')))
             response = openai.Completion.create(
                 model="text-davinci-003",
                 prompt=ask,
@@ -219,9 +219,9 @@ except KeyboardInterrupt:
     
 except Exception:
     os.system('cls')
-    print(f'{Fore.RED + Style.BRIGHT }Sorry for this error. Please report it to https://github.com/tysudo/better_day-0.0.1/issues')
+    print(f'{Fore.RED + Style.BRIGHT }Sorry for this error. Please report it to https://github.com/tytan-codes/better-day/issues')
     time.sleep(3)
-    os.system('start firefox https://github.com/tysudo/better_day-0.0.1/issues')
+    os.system('start firefox https://github.com/tytan-codes/better-day/issues')
 
 
 
