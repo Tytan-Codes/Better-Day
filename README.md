@@ -30,7 +30,7 @@ Install EASY WAY (Its easy but you have to run the command evertime you want to 
 
 RUN EVERYTIME YOU WANT TO RUN THE SCRIPT
 ```
-cd WereverYouDownloadedTheSchript
+cd WereverYouDownloadedTheScript
 Better_Day\Scripts\Activate.ps1
 ```
 
