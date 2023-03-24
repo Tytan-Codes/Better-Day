@@ -9,13 +9,13 @@ openai.api_key = "YOUR_API_KEY_HERE"
 import time
 
 
-
+#test
 
 import subprocess
 
 # Set the GitHub repository URL and the script file name
 github_url = "https://github.com/tytan-codes/better-day.git"
-script_name = "script.py"
+script_name = "main.py"
 
 # Get the latest commit hash from the GitHub repository
 cmd = "git ls-remote " + github_url + " HEAD"
@@ -35,14 +35,12 @@ current_commit = result.stdout.decode().strip()
 if current_commit == latest_commit:
     print("You are running the latest version of the script.")
 else:
-    os.system('clear')
-    print(f"{Style.BRIGHT + Fore.RED}You are running an outdated version of the script.")
-    print(f"{Style.BRIGHT}A new version of the script is available on GitHub.")
-    print(f"{Style.BRIGHT}Latest commit: " + latest_commit)
-    print(f"{Style.BRIGHT}Current commit: " + current_commit)
-    print(f"{Style.BRIGHT + Fore.RED}Please update by running update.py")
-    print(f'{Style.BRIGHT + Fore.RED}You updating will make your experience better')
-    exit()
+    print("A new version of the script is available on GitHub.")
+    print("Latest commit: " + latest_commit)
+    print("Current commit: " + current_commit)
+    print('Updating in 5 seconds...')
+    time.sleep(5)
+    os.system('update.py')
 
 
     
