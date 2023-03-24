@@ -15,7 +15,7 @@ import subprocess
 
 # Set the GitHub repository URL and the script file name
 github_url = "https://github.com/tytan-codes/better-day.git"
-script_name = "script.py"
+script_name = "main.py"
 
 # Get the latest commit hash from the GitHub repository
 cmd = "git ls-remote " + github_url + " HEAD"
