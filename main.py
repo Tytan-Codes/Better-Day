@@ -6,34 +6,10 @@ colorama.init(autoreset=True)
 import argparse
 import time
 openai.api_key = "YOUR_API_KEY_HERE"
-from openai import ApiException
 
-```
-import requests
 
-# Define the GitHub repository and the current commit hash of the script
-REPO_OWNER = 'Tytan-Codes'
-REPO_NAME = 'Better-Day'
-CURRENT_COMMIT_HASH = 'v2.7'
 
-# Retrieve the latest commit hash from the GitHub API
-api_url = f'https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/commits/master'
-response = requests.get(api_url)
-if response.status_code == 200:
-    latest_commit_hash = response.json()['sha']
-else:
-    print('Error: Could not retrieve latest commit hash from GitHub API.')
-    latest_commit_hash = CURRENT_COMMIT_HASH
 
-# Compare the stored commit hash with the latest commit hash
-if CURRENT_COMMIT_HASH != latest_commit_hash:
-    # Initiate the update process
-    print('A new version is available. Please re-download the script. For the latest features.')
-    # ...
-else:
-    print('The script is up to date.')
-
-```
     
     
     
