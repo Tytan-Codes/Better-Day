@@ -24,20 +24,7 @@ py main.py
 <br/>
 <br/>
 
-You do not need python AT ALL wth this method
 
-Install EASY WAY (Its easy but you have to run the command evertime you want to run the script.)
-
-RUN EVERYTIME YOU WANT TO RUN THE SCRIPT
-```
-cd WereverYouDownloadedTheScript
-Better_Day\Scripts\Activate.ps1
-```
-
-You are now in VENV to use the script run:
-```
-py main.py
-```
 
 
 ### NOTE:
@@ -74,6 +61,25 @@ You do not have to comply with the license for elements of the material in the p
 
 No warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.
 
+
+<br/>
+<br/>
+<br/>
+
+You do not need python AT ALL wth this method
+
+Install EASY WAY (Its easy but you have to run the command evertime you want to run the script.)
+
+RUN EVERYTIME YOU WANT TO RUN THE SCRIPT
+```
+cd WereverYouDownloadedTheScript
+Better_Day\Scripts\Activate.ps1
+```
+
+You are now in VENV to use the script run:
+```
+py main.py
+```
 
 - [x] Added at least 12 working functions
 - [x] Add easer CLI
