@@ -8,7 +8,7 @@ import time
 openai.api_key = "YOUR_API_KEY_HERE"
 from openai import ApiException
 
-````
+```
 import requests
 
 # Define the GitHub repository and the current commit hash of the script
