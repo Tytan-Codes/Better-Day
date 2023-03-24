@@ -35,12 +35,14 @@ current_commit = result.stdout.decode().strip()
 if current_commit == latest_commit:
     print("You are running the latest version of the script.")
 else:
-    print("A new version of the script is available on GitHub.")
-    print("Latest commit: " + latest_commit)
-    print("Current commit: " + current_commit)
-    print('Updating in 5 seconds...')
-    time.sleep(5)
-    os.system('update.py')
+    os.system('clear')
+    print(f"{Style.BRIGHT + Fore.RED}You are running an outdated version of the script.")
+    print(f"{Style.BRIGHT}A new version of the script is available on GitHub.")
+    print(f"{Style.BRIGHT}Latest commit: " + latest_commit)
+    print(f"{Style.BRIGHT}Current commit: " + current_commit)
+    print(f"{Style.BRIGHT + Fore.RED}Please update by running update.py")
+    print(f'{Style.BRIGHT + Fore.RED}You updating will make your experience better')
+    exit()
 
 
     
