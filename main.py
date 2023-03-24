@@ -8,7 +8,7 @@ import time
 openai.api_key = "YOUR_API_KEY_HERE"
 from openai import ApiException
 
-
+````
 import requests
 
 # Define the GitHub repository and the current commit hash of the script
@@ -33,7 +33,7 @@ if CURRENT_COMMIT_HASH != latest_commit_hash:
 else:
     print('The script is up to date.')
 
-
+```
     
     
     
