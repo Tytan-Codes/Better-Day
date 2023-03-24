@@ -41,7 +41,7 @@ else:
     print('Updating in 5 seconds...')
     time.sleep(5)
     os.system('update.py')
-
+    exit()
 
     
 
