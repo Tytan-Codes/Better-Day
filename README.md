@@ -2,6 +2,14 @@
 
 ## How to install:
 
+### Notice: This branch is ***Unstable*** this means you may get bugs that will break the script, make sure you run update.py ***daily*** to make sure you are 
+on the latest stuff.
+
+### Update the script by running:
+
+```
+python3 (or py) update.py
+```
 ### Linux / Windows install:
 
 ```
