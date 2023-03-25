@@ -35,8 +35,8 @@ current_commit = result.stdout.decode().strip()
 if current_commit == latest_commit:
     print("You are running the latest version of the script.")
 else:
-    os.system('cls')
-    os.system('clear')
+    os.system('cls' if os.name == 'nt' else 'clear')
+    
     print(f"{Style.BRIGHT + Fore.RED}You are running an outdated version of the script.")
     print(f"{Style.BRIGHT}A new version of the script is available on GitHub.")
     print(f"{Style.BRIGHT}Latest commit: " + latest_commit)
@@ -51,12 +51,12 @@ else:
 
     
 def Linux():
-    os.system('clear')
+    
     print(Style.BRIGHT + Fore.YELLOW + '[' + Style.BRIGHT + Fore.RED + '#' + Style.BRIGHT + Fore.YELLOW + '] Options:')
     print(Style.BRIGHT + Fore.RED + '   {' + Style.BRIGHT + Fore.WHITE +'1' + Style.BRIGHT + Fore.RED + '}' + Style.BRIGHT + Fore.YELLOW + ' ~> ' +  Style.BRIGHT + Fore.WHITE +' Search')
     print(Style.BRIGHT + Fore.RED + '   {' + Style.BRIGHT + Fore.WHITE +'2' + Style.BRIGHT + Fore.RED + '}' + Style.BRIGHT + Fore.YELLOW + ' ~> ' +  Style.BRIGHT + Fore.WHITE +' System')
     print(Style.BRIGHT + Fore.RED + '   {' + Style.BRIGHT + Fore.WHITE +'3' + Style.BRIGHT + Fore.RED + '}' + Style.BRIGHT + Fore.YELLOW + ' ~> ' +  Style.BRIGHT + Fore.WHITE + ' chatGPT NOT WORKING')
-    print(Style.BRIGHT + Fore.RED + '   {' + Style.BRIGHT + Fore.WHITE +'4' + Style.BRIGHT + Fore.RED + '}' + Style.BRIGHT + Fore.YELLOW + ' ~> ' +  Style.BRIGHT + Fore.WHITE + ' Other NOT WORKING')
+    print(Style.BRIGHT + Fore.RED + '   {' + Style.BRIGHT + Fore.WHITE +'4' + Style.BRIGHT + Fore.RED + '}' + Style.BRIGHT + Fore.YELLOW + ' ~> ' +  Style.BRIGHT + Fore.WHITE + ' Other NOT DONE YET')
     print(Style.BRIGHT + Fore.RED + '   {' + Style.BRIGHT + Fore.WHITE +'5' + Style.BRIGHT + Fore.RED + '}' + Style.BRIGHT + Fore.YELLOW + ' ~> ' +  Style.BRIGHT + Fore.WHITE + ' Start my Day NOT DONE')
     print(Style.BRIGHT + Fore.RED + '   {' + Style.BRIGHT + Fore.WHITE +'0' + Style.BRIGHT + Fore.RED + '}' + Style.BRIGHT + Fore.YELLOW + ' ~> ' +  Style.BRIGHT + Fore.WHITE +' Back')
     
@@ -65,9 +65,9 @@ def Linux():
     if pick == 1:
         lixSearch()
     if pick == 2:
-        system()
+        sssystem()
     if pick == 3:
-        exit()
+        chatGPT()
     if pick == 4:
         other()
     if pick == 5:
@@ -76,12 +76,12 @@ def Linux():
         chooseOS()
     
     else: 
-        os.system('clear')
+        
         print(f'{Fore.RED}Invalid Option')
 
 
 def lixSearch():
-    os.system('clear')
+    
     print(f"""{Fore.WHITE + Style.BRIGHT}  _      _                         _____                     _     
 | |    (_)                       / ____|                   | |    
 | |     _ _ __  _   ___  __     | (___   ___  __ _ _ __ ___| |__  
@@ -126,7 +126,7 @@ def lixSearch():
     if llixSearch == 0:
         Linux()
     else: 
-        os.system('clear')
+        
         print(f'{Fore.RED + Style.BRIGHT}Please choose a valid input.')
         time.sleep(3)
         os.system('py main.py')
@@ -165,14 +165,14 @@ def sssystem():
         os.system('touch '+var9+'')
         os.system('python3 main.py')
     if Ssystem == 6:
-        os.system('clear')
+        
         var10 = (int(input(Style.BRIGHT + Fore.RED + 'Better Day ' + Style.BRIGHT + Fore.YELLOW + '> ' + Style.BRIGHT + Fore.RED + 'What command would you like to run? ')))
         os.system(''+var10+'')
         os.system('python3 main.py')
     if Ssystem == 0:
         Linux()
     else: 
-        os.system('clear')
+        
         print(f'{Fore.RED + Style.BRIGHT}Please choose a valid input.')
         time.sleep(3)
         os.system('python3 main.py') 
@@ -184,7 +184,7 @@ def sssystem():
     
 #eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
 def thing():
-        os.system('cls')
+        os.system('cls' if os.name == 'nt' else 'clear')
         print(Style.BRIGHT + Fore.YELLOW + '[' + Style.BRIGHT + Fore.RED + '#' + Style.BRIGHT + Fore.YELLOW + '] Options:')
         print(Style.BRIGHT + Fore.RED + '   {' + Style.BRIGHT + Fore.WHITE +'1' + Style.BRIGHT + Fore.RED + '}' + Style.BRIGHT + Fore.YELLOW + ' ~> ' +  Style.BRIGHT + Fore.WHITE +' Search')
         print(Style.BRIGHT + Fore.RED + '   {' + Style.BRIGHT + Fore.WHITE +'2' + Style.BRIGHT + Fore.RED + '}' + Style.BRIGHT + Fore.YELLOW + ' ~> ' +  Style.BRIGHT + Fore.WHITE +' System')
@@ -209,15 +209,15 @@ def thing():
             chooseOS()
         
         else: 
-            os.system('cls')
+            os.system('cls' if os.name == 'nt' else 'clear')
             print(f'{Fore.RED + Style.BRIGHT}Please choose a valid input.')
             time.sleep(3)
             os.system('py main.py')
 
 def main():
     
-    os.system('cls')
-    os.system('clear')
+    os.system('cls' if os.name == 'nt' else 'clear')
+    
     print(Style.BRIGHT + """  ____       _   _                  _____              
 |  _ \     | | | |                |  __ \             
 | |_) | ___| |_| |_ ___ _ __      | |  | | __ _ _   _ 
@@ -245,7 +245,7 @@ def main():
     
 
 def search():
-    os.system('cls')
+    os.system('cls' if os.name == 'nt' else 'clear')
     print(f"""{Fore.WHITE + Style.BRIGHT} __          ___              _____                     _     
 \ \        / (_)            / ____|                   | |    
 \ \  /\  / / _ _ __       | (___   ___  __ _ _ __ ___| |__  
@@ -289,7 +289,7 @@ def search():
     if search == 0:
         thing()
     else: 
-        os.system('cls')
+        os.system('cls' if os.name == 'nt' else 'clear')
         print(f'{Fore.RED + Style.BRIGHT}Please choose a valid input.')
         time.sleep(3)
         os.system('py main.py')
@@ -300,7 +300,7 @@ def search():
 
 
 def system():
-    os.system('cls')
+    os.system('cls' if os.name == 'nt' else 'clear')
     print(f"""{Fore.WHITE+ Style.BRIGHT} __          ___              _____           _                 
 \ \        / (_)            / ____|         | |                
 \ \  /\  / / _ _ __       | (___  _   _ ___| |_ ___ _ __ ___  
@@ -338,14 +338,14 @@ def system():
         os.system('type nul > '+var9+'')
         os.system('py main.py')
     if System == 6:
-        os.system('cls')
+        os.system('cls' if os.name == 'nt' else 'clear')
         var10 = (int(input(Style.BRIGHT + Fore.RED + 'Better Day ' + Style.BRIGHT + Fore.YELLOW + '> ' + Style.BRIGHT + Fore.RED + 'What command would you like to run? ')))
         os.system(''+var10+'')
         os.system('py main.py')
     if System == 0:
         thing()
     else: 
-        os.system('cls')
+        os.system('cls' if os.name == 'nt' else 'clear')
         print(f'{Fore.RED + Style.BRIGHT}Please choose a valid input.')
         time.sleep(3)
         os.system('py main.py')
@@ -353,7 +353,7 @@ def system():
 
 
 def other():
-    os.system('cls')
+    os.system('cls' if os.name == 'nt' else 'clear')
     print(Style.BRIGHT + Fore.RED + '   {' + Style.BRIGHT + Fore.WHITE +'1' + Style.BRIGHT + Fore.RED + '}' + Style.BRIGHT + Fore.YELLOW + ' ~> ' +  Style.BRIGHT + Fore.WHITE + ' Watch a funny video.')
     print(Style.BRIGHT + Fore.RED + '   {' + Style.BRIGHT + Fore.WHITE +'0' + Style.BRIGHT + Fore.RED + '}' + Style.BRIGHT + Fore.YELLOW + ' ~> ' +  Style.BRIGHT + Fore.WHITE +' Back')
 
@@ -374,10 +374,17 @@ def startDay():
 
 
 
+def chatGPT():
+    os.system('start firefox github.com/tytan-codes/chatGPT')
+    os.system('firefox github.com/tytan-codes/chatGPT')
+
+
+
+
 
 def chooseOS():
-    os.system('clear')
-    os.system('cls')
+    
+    os.system('cls' if os.name == 'nt' else 'clear')
     print(Style.BRIGHT + Fore.YELLOW + '[' + Style.BRIGHT + Fore.RED + '#' + Style.BRIGHT + Fore.YELLOW + '] Options:')
     print(Style.BRIGHT + Fore.RED + '   {' + Style.BRIGHT + Fore.WHITE +'1' + Style.BRIGHT + Fore.RED + '}' + Style.BRIGHT + Fore.YELLOW + ' ~> ' +  Style.BRIGHT + Fore.WHITE +' Windows')
     print(Style.BRIGHT + Fore.RED + '   {' + Style.BRIGHT + Fore.WHITE +'2' + Style.BRIGHT + Fore.RED + '}' + Style.BRIGHT + Fore.YELLOW + ' ~> ' +  Style.BRIGHT + Fore.WHITE +' Linux')
@@ -388,8 +395,10 @@ def chooseOS():
         thing()
     if chooooooose == 2:
         Linux()
+    if chooooooose == 0:
+        exit()
     else:
-        os.system('clear')
+        
         print(f'{Fore.RED + Style.BRIGHT}Please choose a valid input.')
         time.sleep(3)
         os.system('python3 main.py')
