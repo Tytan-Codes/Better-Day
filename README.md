@@ -2,6 +2,9 @@
 
 ## How to install:
 
+### Notice: __You are on the ***stable*** branch__
+This means that you will only get bug tested updates, to get the latest and greatest go to the Unstable Branch. Thank you.
+
 ### Linux / Windows install:
 
 ```
