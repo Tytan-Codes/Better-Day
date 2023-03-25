@@ -9,7 +9,7 @@ openai.api_key = "YOUR_API_KEY_HERE"
 import signal
 signal.signal(signal.SIGINT, signal.SIG_IGN)
 
-#ydgjyfgkjdshgkjhgakjh
+
 
 import subprocess
 
