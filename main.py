@@ -36,6 +36,7 @@ current_commit = result.stdout.decode().strip()
 if current_commit == latest_commit:
     print("You are running the latest version of the script.")
 else:
+    os.system('cls')
     os.system('clear')
     print(f"{Style.BRIGHT + Fore.RED}You are running an outdated version of the script.")
     print(f"{Style.BRIGHT}A new version of the script is available on GitHub.")
@@ -184,7 +185,7 @@ def sssystem():
     
 #eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
 def thing():
-        os.system('clear')
+        os.system('cls')
         print(Style.BRIGHT + Fore.YELLOW + '[' + Style.BRIGHT + Fore.RED + '#' + Style.BRIGHT + Fore.YELLOW + '] Options:')
         print(Style.BRIGHT + Fore.RED + '   {' + Style.BRIGHT + Fore.WHITE +'1' + Style.BRIGHT + Fore.RED + '}' + Style.BRIGHT + Fore.YELLOW + ' ~> ' +  Style.BRIGHT + Fore.WHITE +' Search')
         print(Style.BRIGHT + Fore.RED + '   {' + Style.BRIGHT + Fore.WHITE +'2' + Style.BRIGHT + Fore.RED + '}' + Style.BRIGHT + Fore.YELLOW + ' ~> ' +  Style.BRIGHT + Fore.WHITE +' System')
@@ -209,14 +210,14 @@ def thing():
             chooseOS()
         
         else: 
-            os.system('clear')
+            os.system('cls')
             print(f'{Fore.RED + Style.BRIGHT}Please choose a valid input.')
             time.sleep(3)
             os.system('py main.py')
 
 def main():
     
-    os.system('clear')
+    os.system('cls')
     os.system('clear')
     print(Style.BRIGHT + """  ____       _   _                  _____              
 |  _ \     | | | |                |  __ \             
@@ -245,7 +246,7 @@ def main():
     
 
 def search():
-    os.system('clear')
+    os.system('cls')
     print(f"""{Fore.WHITE + Style.BRIGHT} __          ___              _____                     _     
 \ \        / (_)            / ____|                   | |    
 \ \  /\  / / _ _ __       | (___   ___  __ _ _ __ ___| |__  
@@ -289,7 +290,7 @@ def search():
     if search == 0:
         thing()
     else: 
-        os.system('clear')
+        os.system('cls')
         print(f'{Fore.RED + Style.BRIGHT}Please choose a valid input.')
         time.sleep(3)
         os.system('py main.py')
@@ -300,7 +301,7 @@ def search():
 
 
 def system():
-    os.system('clear')
+    os.system('cls')
     print(f"""{Fore.WHITE+ Style.BRIGHT} __          ___              _____           _                 
 \ \        / (_)            / ____|         | |                
 \ \  /\  / / _ _ __       | (___  _   _ ___| |_ ___ _ __ ___  
@@ -338,14 +339,14 @@ def system():
         os.system('type nul > '+var9+'')
         os.system('py main.py')
     if System == 6:
-        os.system('clear')
+        os.system('cls')
         var10 = (int(input(Style.BRIGHT + Fore.RED + 'Better Day ' + Style.BRIGHT + Fore.YELLOW + '> ' + Style.BRIGHT + Fore.RED + 'What command would you like to run? ')))
         os.system(''+var10+'')
         os.system('py main.py')
     if System == 0:
         thing()
     else: 
-        os.system('clear')
+        os.system('cls')
         print(f'{Fore.RED + Style.BRIGHT}Please choose a valid input.')
         time.sleep(3)
         os.system('py main.py')
@@ -353,7 +354,7 @@ def system():
 
 
 def other():
-    os.system('clear')
+    os.system('cls')
     print(Style.BRIGHT + Fore.RED + '   {' + Style.BRIGHT + Fore.WHITE +'1' + Style.BRIGHT + Fore.RED + '}' + Style.BRIGHT + Fore.YELLOW + ' ~> ' +  Style.BRIGHT + Fore.WHITE + ' Watch a funny video.')
     print(Style.BRIGHT + Fore.RED + '   {' + Style.BRIGHT + Fore.WHITE +'0' + Style.BRIGHT + Fore.RED + '}' + Style.BRIGHT + Fore.YELLOW + ' ~> ' +  Style.BRIGHT + Fore.WHITE +' Back')
 
@@ -377,6 +378,7 @@ def startDay():
 
 def chooseOS():
     os.system('clear')
+    os.system('cls')
     print(Style.BRIGHT + Fore.YELLOW + '[' + Style.BRIGHT + Fore.RED + '#' + Style.BRIGHT + Fore.YELLOW + '] Options:')
     print(Style.BRIGHT + Fore.RED + '   {' + Style.BRIGHT + Fore.WHITE +'1' + Style.BRIGHT + Fore.RED + '}' + Style.BRIGHT + Fore.YELLOW + ' ~> ' +  Style.BRIGHT + Fore.WHITE +' Windows')
     print(Style.BRIGHT + Fore.RED + '   {' + Style.BRIGHT + Fore.WHITE +'2' + Style.BRIGHT + Fore.RED + '}' + Style.BRIGHT + Fore.YELLOW + ' ~> ' +  Style.BRIGHT + Fore.WHITE +' Linux')
