@@ -6,7 +6,6 @@ colorama.init(autoreset=True)
 import argparse
 import time
 openai.api_key = "YOUR_API_KEY_HERE"
-import time
 import signal
 signal.signal(signal.SIGINT, signal.SIG_IGN)
 
