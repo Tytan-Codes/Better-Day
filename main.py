@@ -253,7 +253,7 @@ def main():
     print(Style.BRIGHT + 'Description   :   ', Fore.RED + Style.BRIGHT + 'Cool python things')
     print(Style.BRIGHT + 'Goal          :   ', Fore.RED + Style.BRIGHT + 'Make something COOL')
     print(Style.BRIGHT + 'Github        : ', Fore.RED + Style.BRIGHT +'  github.com/Tytan-Codes')
-    print(Style.BRIGHT + 'Version       : ', Fore.RED + Style.BRIGHT + '  Unstable v4.5.4 -- Beta - Better Day Project')
+    print(Style.BRIGHT + 'Version       : ', Fore.RED + Style.BRIGHT + '  Unstable, v4.5.4 -- Beta - Better Day Project')
     print(Style.BRIGHT + '(c) 2022-2033, Tytan-Codes All rights reserved')
     print(Style.BRIGHT + Fore.YELLOW + '* ' + Style.BRIGHT + 'Trust Me It\'s good' + Style.BRIGHT + Fore.RED + ' -- ' + Style.BRIGHT + 'I\'m a CODER' + Style.BRIGHT + Fore.YELLOW + ' *')
     print('')
