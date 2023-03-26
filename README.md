@@ -16,7 +16,7 @@ You must be singed in to git and gh. Look up how to do it if you want the script
 ```
 Download the zip file and extract it.
 ```
-```
+
 
 ### USAGE:
 
