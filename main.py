@@ -219,13 +219,13 @@ def main():
     os.system('cls' if os.name == 'nt' else 'clear')
     
     print(Style.BRIGHT + """  ____       _   _                  _____              
-|  _ \     | | | |                |  __ \             
-| |_) | ___| |_| |_ ___ _ __      | |  | | __ _ _   _ 
-|  _ < / _ \ __| __/ _ \ '__|     | |  | |/ _` | | | |
-| |_) |  __/ |_| ||  __/ |     _  | |__| | (_| | |_| |
-|____/ \___|\__|\__\___|_|    (_) |_____/ \__,_|\__, |
-                                                __/ |
-                                                |___/ """)
+ |  _ \     | | | |                |  __ \             
+ | |_) | ___| |_| |_ ___ _ __      | |  | | __ _ _   _ 
+ |  _ < / _ \ __| __/ _ \ '__|     | |  | |/ _` | | | |
+ | |_) |  __/ |_| ||  __/ |     _  | |__| | (_| | |_| |
+ |____/ \___|\__|\__\___|_|    (_) |_____/ \__,_|\__, |
+                                                  __/ |
+                                                 |___/ """)
     print(Style.BRIGHT + 'Author        :   ', Fore.RED + Style.BRIGHT + 'Tytan-Codes')
     print(Style.BRIGHT + 'Code Type     :   ', Fore.RED + Style.BRIGHT + 'Python 3')
     print(Style.BRIGHT + 'Description   :   ', Fore.RED + Style.BRIGHT + 'Cool python things')
