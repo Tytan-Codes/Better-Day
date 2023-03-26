@@ -2,8 +2,7 @@
 
 ## How to install:
 
-### Notice: This branch is ***Unstable*** this means you may get bugs that will break the script, make sure you run update.py ***daily*** to make sure you are 
-on the latest stuff. 
+### Notice: This branch is ***Unstable*** this means you may get bugs that will break the script, make sure you run update.py ***daily*** to make sure you are on the latest stuff. 
 
 ### Update the script by running:
 
@@ -11,7 +10,7 @@ on the latest stuff.
 python3 (or py) update.py
 ```
 
-You must be singed in to git and gh. Look up how to do it if you wan't the script to work. I don't keep any of those credentials. Git needs them for the update.
+You must be singed in to git and gh. Look up how to do it if you want the script to work. I don't keep any of those credentials. Git needs them for the update.
 ### Linux / Windows install:
 
 ```
