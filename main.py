@@ -412,7 +412,7 @@ def chooseOS():
 
 #args
 parser = argparse.ArgumentParser(description='It makes you day easier as a developer. As this script is not finished please make sure to look at the github for the latest updates.')
-parser.add_argument('--Windows', action='store_true', help='Go stratight into Windows mode')
+parser.add_argument('--Windows', action='store_true', help='Go straight into Windows mode')
 parser.add_argument('--Linux', action='store_true', help='Go straight into Linux mode')
 args = parser.parse_args()
 
