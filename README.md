@@ -14,7 +14,7 @@ You must be singed in to git and gh. Look up how to do it if you want the script
 ### Linux / Windows install:
 
 ```
-git clone -b Unstable https://github.com/tytan-codes/better.day.git
+git clone -b Unstable https://github.com/tytan-codes/better-day.git
 ```
 
 
