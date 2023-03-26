@@ -15,6 +15,8 @@ You must be singed in to git and gh. Look up how to do it if you want the script
 
 ```
 git clone -b Unstable https://github.com/tytan-codes/better-day.git
+cd better-day
+python3 -m pip install -r requirements.txt
 ```
 
 
