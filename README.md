@@ -15,9 +15,8 @@ You must be singed in to git and gh. Look up how to do it if you wan't the scrip
 ### Linux / Windows install:
 
 ```
-git clone https://github.com/tytan-codes/better-day.git
-python3 -m pip install -r requirements.txt
-python3 main.py
+Download the zip file and extract it.
+```
 ```
 
 ### USAGE:
