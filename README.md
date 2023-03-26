@@ -21,11 +21,11 @@ List all args:
 ```
 python3 main.py -h
 ```
-Start into Linux Version:
+Start into Linux Version (not needed anymore because of update 4.5.3):
 ```
 python3 main.py --Windows
 ```
-Start into Linux Version:
+Start into Linux Version (not needed anymore because of update 4.5.3):
 ```
 python3 main.py --Linux
 ```
