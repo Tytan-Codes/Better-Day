@@ -2,7 +2,7 @@ import subprocess
 
 # Set the GitHub repository URL, the branch name, and the script file name
 github_url = "https://github.com/tytan-codes/better-day.git"
-branch_name = "Stable"
+branch_name = "Unstable"
 script_name = "main.py"
 
 # Get the latest commit hash from the GitHub repository
