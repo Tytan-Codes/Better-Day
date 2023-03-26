@@ -14,9 +14,9 @@ signal.signal(signal.SIGINT, signal.SIG_IGN)
 import subprocess
 
 # Set the GitHub repository URL and the branch name
-github_url = "https://github.com/username/repository.git"
+github_url = "https://github.com/tytan-codes/better-day.git"
 branch_name = "Unstable"
-
+script_name = "main.py"
 # Get the latest commit hash from the GitHub repository for the specified branch
 cmd = f"git ls-remote {github_url} {branch_name}"
 result = subprocess.run(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
