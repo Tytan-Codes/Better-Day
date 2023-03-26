@@ -46,8 +46,13 @@ else:
     print(f'{Style.BRIGHT + Fore.RED}You updating will make your experience better')
     exit()
 
-
-    
+def picker(nehow):
+    nehoww = platform.system()
+    if nehoww == 'Windows':
+        os.system(f'{nehow}')
+    if nehoww == 'Windows':
+        os.system(f'{nehow}')
+        
 def os():
     current_os = platform.system()
     
@@ -378,7 +383,7 @@ def other():
     oter = (int(input(Style.BRIGHT + Fore.RED + 'Better Day ' + Style.BRIGHT + Fore.YELLOW + '> ' + Style.BRIGHT + Fore.RED + 'Choose ')))
     
     if oter == 1:
-        os.system('start firefox https://youtube.com/ozzymanreviews')
+        picker('https://youtube.com/ozzymanreviews')
     if oter == 0:
         thing()
         
