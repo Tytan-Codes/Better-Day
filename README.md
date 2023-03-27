@@ -42,7 +42,7 @@ This script is protected under the [__Attribution-NonCommercial-NoDerivatives 4.
 - [x] Maker CLI look AWESOME
 - [x] Make crossplatform (Linux / Windows)
 - [ ] Add UI
-
+- [ ] Make it work on Mac OS
 
 
 - Made by Tytan
