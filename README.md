@@ -11,6 +11,7 @@ You must be logged  to git and gh into for the script and update scripts to work
 
 ```
 git clone https://github.com/tytan-codes/better-day.git
+cd better-day
 python3 -m pip install -r requirements.txt
 python3 main.py
 ```
