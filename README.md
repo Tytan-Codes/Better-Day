@@ -1,5 +1,7 @@
 # Better Day
 
+Need help? Go to out discord: https://discord.gg/DVV3HSAS
+
 ## How to install:
 
 ### Notice: __You are on the ***stable*** branch__
