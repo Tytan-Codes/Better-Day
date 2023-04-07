@@ -1,6 +1,6 @@
 # Better Day
 
-Need help? Go to out discord: https://discord.gg/qgnR8CCRE3
+Need help? Go to my discord: https://discord.gg/qgnR8CCRE3
 
 ## How to install:
 
