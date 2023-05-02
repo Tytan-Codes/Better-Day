@@ -1,50 +1,42 @@
-# Better Day
+# Better Day 🌞
+Need help? Join our Discord community: https://discord.gg/qgnR8CCRE3
 
-Need help? Go to my discord: https://discord.gg/qgnR8CCRE3
+### Installation 🛠️
+Notice: You are on the stable branch
+This means that you will only receive thoroughly tested updates. For the latest features and updates, switch to the Unstable Branch. Thank you.
 
-## How to install:
+To ensure the script and update scripts work correctly, you must be logged in to git and gh. We do not store any credentials; they are solely for Git usage.
 
-### Notice: __You are on the ***stable*** branch__
-This means that you will only get bug tested updates, to get the latest and greatest go to the Unstable Branch. Thank you.
-
-You must be logged  to git and gh into for the script and update scripts to work, I don't keep any of the credentials, they are just for git.
-
-### Linux / Windows install:
-
+### Linux / Windows installation:
 ```
 git clone https://github.com/tytan-codes/better-day.git
 cd better-day
 python3 -m pip install -r requirements.txt
 python3 main.py
 ```
+#Usage 🚀
+List all arguments:
 
-### USAGE:
-
-List all args:
 ```
 python3 main.py -h
 ```
-Start into Linux Version (not needed anymore because of update 4.5.3):
+Start the Windows version (not required as of update 4.5.3):
+
 ```
 python3 main.py --Windows
 ```
-Start into Linux Version (not needed anymore because of update 4.5.3):
+Start the Linux version (not required as of update 4.5.3):
+
 ```
 python3 main.py --Linux
 ```
-
-
-### NOTE:
-
-This script is protected under the [__Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)__](https://creativecommons.org/licenses/by-nc-nd/4.0/)
-
+### Note 📝
+This script is protected under the Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) license.
 
 - [x] Added at least 12 working functions
-- [x] Add easer CLI
-- [x] Maker CLI look AWESOME
-- [x] Make crossplatform (Linux / Windows)
+- [x] Improved CLI ease of use
+- [x] Made CLI look AWESOME
+- [x] Cross-platform compatibility (Linux / Windows)
 - [ ] Add UI
-- [ ] Make it work on Mac OS
-
-
-- Made by Tytan
+- [ ] Ensure compatibility with macOS
+Created by Tytan. Enjoy Better Day! 🎉
