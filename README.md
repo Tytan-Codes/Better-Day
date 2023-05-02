@@ -1,52 +1,41 @@
-# Better Day
+# Better Day 🌞
+Need help? Join our Discord community: https://discord.gg/qgnR8CCRE3
 
-## How to install:
+### Installation 🛠️
+Notice: You are on the Unstable branch. MAY BE BUGGY.
 
-### Notice: This branch is ***Unstable*** this means you may get bugs that will break the script, make sure you run update.py ***daily*** to make sure you are on the latest stuff. 
+To ensure the script and update scripts work correctly, you must be logged in to git and gh. We do not store any credentials; they are solely for Git usage.
 
-### Update the script by running:
-
+### Linux / Windows installation:
 ```
-python3 (or py) update.py
-```
-
-You must be singed in to git and gh. Look up how to do it if you want the script to work. I don't keep any of those credentials. Git needs them for the update.
-### Linux / Windows install:
-
-```
-git clone -b Unstable https://github.com/tytan-codes/better-day.git
+git clone https://github.com/tytan-codes/better-day.git
 cd better-day
 python3 -m pip install -r requirements.txt
+python3 main.py
 ```
+#Usage 🚀
+List all arguments:
 
-
-### USAGE:
-
-List all args:
 ```
 python3 main.py -h
 ```
-Start into Linux Version:
+Start the Windows version (not required as of update 4.5.3):
+
 ```
 python3 main.py --Windows
 ```
-Start into Linux Version:
+Start the Linux version (not required as of update 4.5.3):
+
 ```
 python3 main.py --Linux
 ```
-
-
-### NOTE:
-
-This script is protected under the [__Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)__](https://creativecommons.org/licenses/by-nc-nd/4.0/)
-
+### Note 📝
+This script is protected under the Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) license.
 
 - [x] Added at least 12 working functions
-- [x] Add easer CLI
-- [x] Maker CLI look AWESOME
-- [x] Make crossplatform (Linux / Windows)
+- [x] Improved CLI ease of use
+- [x] Made CLI look AWESOME
+- [x] Cross-platform compatibility (Linux / Windows)
 - [ ] Add UI
-
-
-
-- Made by Tytan
+- [ ] Ensure compatibility with macOS
+Created by Tytan. Enjoy Better Day! 🎉
