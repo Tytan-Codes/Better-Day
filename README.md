@@ -8,6 +8,15 @@ This means that you will only receive thoroughly tested updates. For the latest 
 To ensure the script and update scripts work correctly, you must be logged in to git and gh. We do not store any credentials; they are solely for Git usage.
 
 ### Linux / Windows installation:
+
+
+
+
+
+
+
+
+
 ```
 git clone https://github.com/tytan-codes/better-day.git
 cd better-day
@@ -30,6 +39,13 @@ Start the Linux version (not required as of update 4.5.3):
 ```
 python3 main.py --Linux
 ```
+### DEMO:
+
+
+https://user-images.githubusercontent.com/91703892/235813569-0d43b29d-2284-4bb5-8350-ac6d118b7c22.mp4
+
+
+
 ### Note 📝
 This script is protected under the Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) license.
 
