@@ -20,7 +20,6 @@ setup(
     ],
     python_requires='>=3.6',
     install_requires=[
-        # add your package dependencies here
         "openai",
         "colorama",
         "argparse"
