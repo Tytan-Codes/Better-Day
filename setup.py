@@ -1,14 +1,10 @@
 from setuptools import setup, find_packages
 
-with open('README.rst', 'r') as f:
-    long_description = f.read()
-
 setup(
     name='Better Day',
     version='4.5.6',
     description='It makes your day better',
-    long_description=long_description,
-    long_description_content_type='text/x-rst',
+    long_description='...',
     author='Tytan Codes',
     author_email='spam@thetytan.com',
     url='https://github.com/tytan-codes/better-day',
@@ -26,6 +22,11 @@ setup(
     install_requires=[
         "openai",
         "colorama",
-        "argparse"
+        "argparse",
+        "click"
     ],
+    entry_points='''
+        [console_scripts]
+        better-day=better_day.cli:better_day
+    ''',
 )
