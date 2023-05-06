@@ -4,12 +4,12 @@ setup(
     name='Better Day',
     version='4.5.6',
     description='It makes your day better',
+    long_description='It is made in python 3 and it makes your day easier as a developer by giving you things that you will use faster and at you finger tips.',
     author='Tytan Codes',
     author_email='spam@thetytan.com',
     url='https://github.com/tytan-codes/better-day',
     packages=find_packages(),
     classifiers=[
-        'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3',
