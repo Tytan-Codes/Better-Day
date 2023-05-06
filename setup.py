@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name='Better Day',
     version='4.5.6',
-    description='It Makes you day better',
+    description='It makes your day better',
     author='Tytan Codes',
     author_email='spam@thetytan.com',
     url='https://github.com/tytan-codes/better-day',
@@ -21,10 +21,8 @@ setup(
     python_requires='>=3.6',
     install_requires=[
         # add your package dependencies here
-        "platform"
-        "openai"
-        "colorama"
-        "signal"
+        "openai",
+        "colorama",
         "argparse"
     ],
 )
