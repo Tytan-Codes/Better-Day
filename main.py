@@ -12,7 +12,16 @@ import platform
 #ydgjyfgkjdshgkjhgakjh
 
 import subprocess
+import click
+from better_day.main import main
 
+@click.command()
+def better_day():
+    main()
+
+if __name__ == '__main__':
+    better_day()
+os.system('cls')
 # Set the GitHub repository URL and the branch name
 github_url = "https://github.com/tytan-codes/better-day.git"
 branch_name = "Stable"
