@@ -1,10 +1,14 @@
 from setuptools import setup, find_packages
 
+with open('README.rst', 'r') as f:
+    long_description = f.read()
+
 setup(
     name='Better Day',
     version='4.5.6',
     description='It makes your day better',
-    long_description='It is made in python 3 and it makes your day easier as a developer by giving you things that you will use faster and at you finger tips.',
+    long_description=long_description,
+    long_description_content_type='text/x-rst',
     author='Tytan Codes',
     author_email='spam@thetytan.com',
     url='https://github.com/tytan-codes/better-day',
