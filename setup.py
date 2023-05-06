@@ -1,12 +1,12 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='example-package',
-    version='0.1.0',
-    description='A short description of your package',
-    author='Your Name',
-    author_email='your.email@example.com',
-    url='https://github.com/your-username/example-package',
+    name='Better Day',
+    version='4.5.6',
+    description='It Makes you day better',
+    author='Tytan Codes',
+    author_email='spam@thetytan.com',
+    url='https://github.com/tytan-codes/better-day',
     packages=find_packages(),
     classifiers=[
         'Development Status :: 3 - Alpha',
