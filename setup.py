@@ -21,10 +21,10 @@ setup(
     python_requires='>=3.6',
     install_requires=[
         # add your package dependencies here
-        platform
-        openai
-        colorama
-        signal
-        argparse
+        "platform"
+        "openai"
+        "colorama"
+        "signal"
+        "argparse"
     ],
 )
