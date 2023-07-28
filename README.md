@@ -1,5 +1,9 @@
 # Better Day 🌞
 Need help? Join our Discord community: https://discord.gg/qgnR8CCRE3
+### EOL
+
+IMPORTANT: This version has reached its EOL, this means it won't be maintained. If you wanna get the updated version go to better-day-5.
+
 
 ### Installation 🛠️
 Notice: You are on the stable branch
